@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "founderkit/course-card",
+  "version": "1.0.0",
+  "title": "FK Course Card",
+  "category": "founderkit",
+  "icon": "book-alt",
+  "description": "Course display card",
+  "textdomain": "founderkit",
+  "editorScript": "file:../../assets/js/founderkit.js",
+  "editorStyle": "file:../../assets/css/editor.css",
+  "style": "file:../../assets/css/founderkit.css",
+  "render": "file:./render.php",
+  "attributes": {
+    "className": {
+      "type": "string",
+      "default": ""
+    },
+    "anchor": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "className": true
+  }
+}

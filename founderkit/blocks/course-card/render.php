@@ -1,0 +1,1 @@
+<?php defined('ABSPATH') || exit; $classname='fk-block fk-course-card '.esc_attr($attributes['className']??''); $anchor=!empty($attributes['anchor'])?' id="'.esc_attr($attributes['anchor']).'"':''; ?><section class="<?php echo $classname; ?>"<?php echo $anchor; ?> data-fk-block="course-card"><?php echo $content; ?></section>

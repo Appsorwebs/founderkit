@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "founderkit/pricing-table",
+  "version": "1.0.0",
+  "title": "FK Pricing Table",
+  "category": "founderkit",
+  "icon": "money-alt",
+  "description": "Pricing plans",
+  "textdomain": "founderkit",
+  "editorScript": "file:../../assets/js/founderkit.js",
+  "editorStyle": "file:../../assets/css/editor.css",
+  "style": "file:../../assets/css/founderkit.css",
+  "render": "file:./render.php",
+  "attributes": {
+    "className": {
+      "type": "string",
+      "default": ""
+    },
+    "anchor": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "className": true
+  }
+}
