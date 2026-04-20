@@ -1,0 +1,74 @@
+{
+  "name": "founderkit/founderkit",
+  "description": "Premium Gutenberg block suite for WordPress — for founders, academies, agencies, and innovation-driven businesses. Includes 15+ blocks: hero, stats, testimonials, pricing, portfolio, and more.",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://founderkit.com",
+  "authors": [
+    {
+      "name": "AppsOrWebs Limited",
+      "email": "hello@founderkit.com",
+      "homepage": "https://appsorwebs.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "composer/installers": "^2.0"
+  },
+  "require-dev": {
+    "wp-cli/wp-cli-bundle": "^2.6",
+    "phpunit/phpunit": "^9.5",
+    "yoast/phpunit-polyfills": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "FounderKit\\": "founderkit/"
+    },
+    "files": []
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "FounderKit\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit",
+    "lint": "php -l founderkit/*.php",
+    "cs-check": "phpcs --standard=PSR12 founderkit/",
+    "cs-fix": "phpcbf --standard=PSR12 founderkit/",
+    "post-install-cmd": [
+      "@php -r \"if (!is_dir('vendor/wp-cli')) { echo 'Install WP-CLI for full developer experience'; }\""
+    ],
+    "post-update-cmd": [
+      "@php -r \"if (!is_dir('vendor/wp-cli')) { echo 'Run composer install to ensure dependencies are up to date'; }\""
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "allow-plugins": {
+      "composer/installers": true
+    }
+  },
+  "extra": {
+    "installer-paths": {
+      "wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+    }
+  },
+  "keywords": [
+    "wordpress",
+    "plugin",
+    "gutenberg",
+    "blocks",
+    "block-editor",
+    "founder",
+    "startup",
+    "academy",
+    "agency",
+    "landing-pages",
+    "page-builder"
+  ],
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}

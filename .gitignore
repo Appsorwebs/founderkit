@@ -1,0 +1,58 @@
+# Editor config
+*.editorconfig
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# PHP
+.php_cs.cache
+.phpunit.result.cache
+/phpunit.xml
+.phpunit/
+.phpstan/
+.phan/
+
+# WordPress
+wp-content/
+sitemap.xml
+sitemap.xml.gz
+
+# Dependency dirs
+vendor/
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Cache
+wp-content/cache/
+advanced-cache.php
+object-cache.php
+
+# Temporary
+*.tmp
+*.temp
+.~*

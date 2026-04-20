@@ -1,0 +1,6 @@
+module.exports = {
+  extends: ['@wordpress/eslint-plugin/wp'],
+  rules: {
+    'react/no-unescaped-entities': 'off'
+  }
+};

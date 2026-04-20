@@ -1,0 +1,29 @@
+<?php
+/**
+ * PHP CodeSniffer configuration for FounderKit
+ *
+ * @package FounderKit
+ * @author  AppsOrWebs Limited
+ */
+
+$phpcsFileSets = [
+    'founderkit' => [
+        'exclude' => [
+            'founderkit/vendor',
+            'founderkit/node_modules',
+            'founderkit/tests'
+        ],
+        'baseDir' => 'founderkit'
+    ]
+];
+
+return [
+    'standard' => 'WordPress',
+    'installedPaths' => [
+        __DIR__ . '/vendor/wp-coding-standards/wpcs',
+        __DIR__ . '/vendor/phpcsstandards/phpcsutils',
+        __DIR__ . '/vendor/phpcsstandards/phpcs-security-audit',
+    ],
+    'ruleset' => 'WordPress',
+    'ignoreWarnings' => false,
+];

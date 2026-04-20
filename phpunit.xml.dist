@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="tests/bootstrap.php"
+         colors="true"
+         stopOnFailure="false">
+  <testsuites>
+    <testsuite name="FounderKit Test Suite">
+      <directory suffix="Test.php">tests/</directory>
+    </testsuite>
+  </testsuites>
+
+  <filter>
+    <whitelist>
+      <directory suffix=".php">founderkit</directory>
+      <exclude>
+        <directory>founderkit/assets</directory>
+        <directory>founderkit/admin/views</directory>
+        <directory>founderkit/admin/assets</directory>
+        <file>founderkit/founderkit.php</file>
+      </exclude>
+    </whitelist>
+  </filter>
+
+  <php>
+    <ini name="error_reporting" value="-1"/>
+    <ini name="display_errors" value="1"/>
+    <ini name="log_errors" value="1"/>
+    <server name="WP_TESTS_DIR" value="/tmp/wordpress-tests-lib"/>
+    <server name="WP_PHP_BINARY" value="php"/>
+  </php>
+</phpunit>

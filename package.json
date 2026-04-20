@@ -1,0 +1,32 @@
+{
+  "name": "founderkit/founderkit-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "description": "FounderKit WordPress plugin frontend assets",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch",
+    "lint": "eslint assets/js/",
+    "format": "prettier --write \"assets/**/*.{js,css,json}\""
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "babel-loader": "^9.1.0",
+    "css-loader": "^6.8.0",
+    "cssnano": "^6.0.0",
+    "escape-string-regexp": "^4.0.0",
+    "mini-css-extract-plugin": "^2.7.0",
+    "postcss": "^8.4.0",
+    "postcss-loader": "^7.3.0",
+    "postcss-preset-env": "^9.0.0",
+    "prettier": "^3.0.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "> 0.25%"
+  ]
+}
